@@ -1,6 +1,6 @@
-# entregar
+# alura_project
 
-Projeto desenvolvido para a semana 19 e 20 da Alura
+A new Flutter project.
 
 ## Getting Started
 
