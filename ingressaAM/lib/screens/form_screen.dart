@@ -14,6 +14,9 @@ class _FormScreenState extends State<FormScreen> {
 
   TextEditingController tituloCurtoController = TextEditingController();
   TextEditingController tituloLongoController = TextEditingController();
+  TextEditingController oQueEhController = TextEditingController();
+  TextEditingController quemPodeFazerController = TextEditingController();
+  TextEditingController comoSeInscreverController = TextEditingController();
 
   final _formKey = GlobalKey<FormState>();
 
@@ -36,7 +39,7 @@ class _FormScreenState extends State<FormScreen> {
         body: Center(
           child: SingleChildScrollView(
             child: Container(
-              height: 650,
+              height: 750, // Ajustado para comportar todos os campos
               width: 375,
               decoration: BoxDecoration(
                 color: Colors.lightGreen,
@@ -87,16 +90,81 @@ class _FormScreenState extends State<FormScreen> {
                       ),
                     ),
                   ),
-                  ElevatedButton(onPressed: () {
-                    if(_formKey.currentState!.validate()) {
-                      VestibularProvider.of(widget.formContext).newPersonagem(
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: TextFormField(
+                      validator: (String? value) {
+                        if(valueValidate(value)) {
+                          return 'Insira o que é o vestibular';
+                        }
+                        return null;
+                      },
+                      keyboardType: TextInputType.text,
+                      controller: oQueEhController,
+                      textAlign: TextAlign.center,
+                      decoration: const InputDecoration(
+                        border: OutlineInputBorder(),
+                        hintText: 'O que é?',
+                        fillColor: Colors.white,
+                        filled: true,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: TextFormField(
+                      validator: (String? value) {
+                        if(valueValidate(value)) {
+                          return 'Insira quem pode fazer o vestibular';
+                        }
+                        return null;
+                      },
+                      keyboardType: TextInputType.text,
+                      controller: quemPodeFazerController,
+                      textAlign: TextAlign.center,
+                      decoration: const InputDecoration(
+                        border: OutlineInputBorder(),
+                        hintText: 'Quem pode fazer?',
+                        fillColor: Colors.white,
+                        filled: true,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: TextFormField(
+                      validator: (String? value) {
+                        if(valueValidate(value)) {
+                          return 'Insira como se inscrever';
+                        }
+                        return null;
+                      },
+                      keyboardType: TextInputType.text,
+                      controller: comoSeInscreverController,
+                      textAlign: TextAlign.center,
+                      decoration: const InputDecoration(
+                        border: OutlineInputBorder(),
+                        hintText: 'Como se inscrever?',
+                        fillColor: Colors.white,
+                        filled: true,
+                      ),
+                    ),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      if(_formKey.currentState!.validate()) {
+                        // Adicionando todos os parâmetros ao novo vestibular
+                        VestibularProvider.of(widget.formContext).newVestibular(
                           tituloCurtoController.text,
-                          tituloLongoController.text
-                      );
-                      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Vestibular criado com sucesso!')));
-                      Navigator.pop(context);
-                    }
-                  },
+                          tituloLongoController.text,
+                          oQueEhController.text,
+                          quemPodeFazerController.text,
+                          comoSeInscreverController.text,
+                        );
+                        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Vestibular criado com sucesso!')));
+                        Navigator.pop(context);
+                      }
+                    },
                     child: const Text('Adicionar'),
                   ),
                 ],
