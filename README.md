@@ -33,10 +33,10 @@
         1. Abra o terminal e navegue até a pasta onde deseja salvar o projeto.
       </p>
       <p>
-        2. Execute o comando: <code>git clone https://github.com/seu-repositorio.git</code>.
+        2. Execute o comando: <code>git clone https://github.com/rennan-dev/ingressaAm.git</code>.
       </p>
       <p>
-        3. Após a clonagem, navegue para a pasta do projeto com: <code>cd nome-do-projeto</code>.
+        3. Após a clonagem, navegue para a pasta do projeto com: <code>cd ingressaAm</code>.
       </p>
     </li>
     <li>
