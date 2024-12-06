@@ -10,7 +10,7 @@ class LoggerInterceptor extends InterceptorContract {
   Future<BaseRequest> interceptRequest({
     required BaseRequest request,
   }) async {
-    //print('----- Request -----');
+    log('----- Request -----');
     logger.t("Requisição para ${request.url}\nCabeçalhos: ${request.headers}\nCorpo: ${request.toString()}");
     return request;
   }

@@ -40,8 +40,7 @@ class VestibularDetailsScreen extends StatelessWidget {
             const SizedBox(height: 16),
             GestureDetector(
               onTap: () {
-                // Abre o link oficial em um navegador
-                // Pode usar a biblioteca `url_launcher` para isso
+                //TODO função para adicionar ida para o link
               },
               child: Text(
                 vestibular.linkOficial,
