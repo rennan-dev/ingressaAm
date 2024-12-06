@@ -11,11 +11,6 @@
       "id": 2
     },
     {
-      "email": "rennan@gmail.com",
-      "password": "$2a$10$wDELCmb0Z9s3hLX2tsQS2.JvRZOzHxloHO1/uLs2StslZm2B1VitO",
-      "id": 3
-    },
-    {
       "email": "joao@gmail.com",
       "password": "$2a$10$7x07z9die6yKnLLH56fRXOLJNwbTQrZMOKuNetAau3wfMd6UAIpRG",
       "id": 4
@@ -30,15 +25,6 @@
       "quem_pode_fazer": "Qualquer pessoa com o ensino médio completo",
       "como_fazer": "Acesse o site oficial, preencha o formulário e faça a prova",
       "link_oficial": "https://www.universidadexyz.edu.br/vestibular"
-    },
-    {
-      "id": "2",
-      "titulo_curto": "Vestibular 2023",
-      "titulo_longo": "Vestibular 2023 para ingresso na Universidade XYZ",
-      "o_que_eh": "Processo seletivo para ingresso em cursos de graduação",
-      "quem_pode_fazer": "Qualquer pessoa com o ensino médio completo",
-      "como_fazer": "Acesse o site oficial, preencha o formulário e faça a prova",
-      "link_oficial": "https://www.universidadexyz.edu.br/vestibular"
     }
   ],
   "journals": [
@@ -48,20 +34,6 @@
       "created_at": "2024-12-01 17:05:34.311558",
       "updated_at": "2024-12-01 17:05:34.311558",
       "userId": 2
-    },
-    {
-      "id": "de4f7cf0-b333-11ef-aa1a-5381199cb3ce",
-      "content": "Fazer nada  muito bom",
-      "created_at": "2024-11-26 18:08:01.209421",
-      "updated_at": "2024-11-26 18:08:01.209421",
-      "userId": 1
-    },
-    {
-      "id": "64805580-b337-11ef-9e48-478e2f0e7fd8",
-      "content": "Hoje eu corri",
-      "created_at": "2024-11-26 18:33:14.871761",
-      "updated_at": "2024-11-26 18:33:14.871761",
-      "userId": 4
     }
   ]
 }
