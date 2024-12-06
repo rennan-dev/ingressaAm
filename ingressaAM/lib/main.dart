@@ -44,10 +44,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.grey,
         appBarTheme: const AppBarTheme(
           elevation: 0,
-          backgroundColor: Colors.lightGreen,
-          titleTextStyle: TextStyle(color: Colors.white),
-          actionsIconTheme: IconThemeData(color: Colors.white),
-          iconTheme: IconThemeData(color: Colors.white),
+          backgroundColor: Color(0xFFB3E5FC),
+          titleTextStyle: TextStyle(color: Colors.black),
+          actionsIconTheme: IconThemeData(color: Colors.black),
+          iconTheme: IconThemeData(color: Colors.black),
         ),
         textTheme: GoogleFonts.bitterTextTheme()
       ),

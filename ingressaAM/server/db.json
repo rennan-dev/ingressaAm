@@ -14,6 +14,11 @@
       "email": "joao@gmail.com",
       "password": "$2a$10$7x07z9die6yKnLLH56fRXOLJNwbTQrZMOKuNetAau3wfMd6UAIpRG",
       "id": 4
+    },
+    {
+      "email": "iego@gmail.com",
+      "password": "$2a$10$x47p8FpxEW7Iu6Mu4AUUOug96xH0lY.0dwsYwVS/LesMqWhzlA.pu",
+      "id": 5
     }
   ],
   "vestibulares": [
