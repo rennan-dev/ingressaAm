@@ -30,6 +30,15 @@
       "quem_pode_fazer": "Qualquer pessoa com o ensino médio completo",
       "como_fazer": "Acesse o site oficial, preencha o formulário e faça a prova",
       "link_oficial": "https://www.universidadexyz.edu.br/vestibular"
+    },
+    {
+      "id": "2",
+      "titulo_curto": "Vestibular 2023",
+      "titulo_longo": "Vestibular 2023 para ingresso na Universidade XYZ",
+      "o_que_eh": "Processo seletivo para ingresso em cursos de graduação",
+      "quem_pode_fazer": "Qualquer pessoa com o ensino médio completo",
+      "como_fazer": "Acesse o site oficial, preencha o formulário e faça a prova",
+      "link_oficial": "https://www.universidadexyz.edu.br/vestibular"
     }
   ],
   "journals": [
