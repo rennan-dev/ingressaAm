@@ -29,7 +29,7 @@ class LoginScreen extends StatelessWidget {
               width: 200,
               height: 200,
               decoration: const BoxDecoration(
-                color: Color(0xFFB3E5FC),
+                color: Color(0xFF98F5F9),
                 shape: BoxShape.circle,
               ),
             ),
@@ -41,7 +41,7 @@ class LoginScreen extends StatelessWidget {
               width: 150,
               height: 150,
               decoration: const BoxDecoration(
-                color: Color(0xFFB3E5FC),
+                color: Color(0xFF98F5F9),
                 shape: BoxShape.circle,
               ),
             ),
@@ -55,17 +55,17 @@ class LoginScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     const CircleAvatar(
-                      radius: 50,
-                      backgroundColor: Color(0xFFB3E5FC),
+                      radius: 65,
+                      backgroundColor: Color(0xFF98F5F9),
                       child: Icon(
                         Icons.person,
-                        size: 50,
+                        size: 70,
                         color: Colors.white,
                       ),
                     ),
                     const SizedBox(height: 16),
                     const Text(
-                      "Login",
+                      "Sign In/Sign Up",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 32,
@@ -99,15 +99,15 @@ class LoginScreen extends StatelessWidget {
                     ElevatedButton(
                       onPressed: () => login(context),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFFB3E5FC),
+                        backgroundColor: const Color(0xFF98F5F9),
                         padding: const EdgeInsets.symmetric(vertical: 16),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8),
                         ),
                       ),
                       child: const Text(
-                        "Entrar",
-                        style: TextStyle(fontSize: 18),
+                        "Entrar/Cadastrar",
+                        style: TextStyle(fontSize: 18, color: Colors.black),
                       ),
                     ),
                     const SizedBox(height: 16),

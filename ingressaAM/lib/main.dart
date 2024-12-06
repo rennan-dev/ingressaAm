@@ -32,13 +32,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Simple Journal',
+      title: 'Ingressa AM',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.grey,
         appBarTheme: const AppBarTheme(
           elevation: 0,
-          backgroundColor: Color(0xFFB3E5FC),
+          backgroundColor: Color(0xFF98F5F9),
           titleTextStyle: TextStyle(color: Colors.black),
           actionsIconTheme: IconThemeData(color: Colors.black),
           iconTheme: IconThemeData(color: Colors.black),

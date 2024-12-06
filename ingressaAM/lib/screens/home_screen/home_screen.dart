@@ -67,11 +67,11 @@ class _HomeScreenState extends State<HomeScreen> {
       )
           : const Center(child: CircularProgressIndicator()),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: const Color(0xFFB3E5FC),
+        backgroundColor: const Color(0xFF98F5F9),
         onPressed: () {
           navigateToAddVestibular();
         },
-        child: const Icon(Icons.add,),
+        child: const Icon(Icons.add, color: Colors.black,),
         tooltip: 'Adicionar Vestibular',
       ),
     );
