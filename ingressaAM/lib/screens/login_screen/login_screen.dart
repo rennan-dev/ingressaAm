@@ -19,11 +19,9 @@ class LoginScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          // Fundo branco
           Container(
             color: Colors.white,
           ),
-          // Bolas azul-claro no topo
           Positioned(
             top: -80,
             left: -50,
@@ -48,7 +46,6 @@ class LoginScreen extends StatelessWidget {
               ),
             ),
           ),
-          // Formulário de login
           Center(
             child: SingleChildScrollView(
               child: Padding(
@@ -63,7 +60,7 @@ class LoginScreen extends StatelessWidget {
                       child: Icon(
                         Icons.person,
                         size: 50,
-                        color: Colors.white, // Ícone branco
+                        color: Colors.white,
                       ),
                     ),
                     const SizedBox(height: 16),

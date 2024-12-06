@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_webapi_first_course/models/journal.dart';
-import 'package:flutter_webapi_first_course/screens/add_journal_screen/add_journal_screen.dart';
 import 'package:flutter_webapi_first_course/screens/add_vestibular_screen/add_vestibular_screen.dart';
 import 'package:flutter_webapi_first_course/screens/login_screen/login_screen.dart';
 import 'package:flutter_webapi_first_course/screens/vestibular_details_screen/vestibular_details_screen.dart';
-import 'package:flutter_webapi_first_course/services/journal_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'models/vestibular.dart';
 import 'screens/home_screen/home_screen.dart';
@@ -15,11 +12,6 @@ void main() async {
 
   bool isLogged = await verifyToken();
   runApp(MyApp(isLogged: isLogged,));
-
-  JournalService service = JournalService();
-  //service.register(Journal.empty());
-  //service.getAll();
-  //asyncStudy();
 }
 
 Future<bool> verifyToken() async {
@@ -64,18 +56,6 @@ class MyApp extends StatelessWidget {
           vestibular: ModalRoute.of(context)!.settings.arguments as Vestibular,
           isEditing: false, // ou true se for edição
         ),
-      },
-      onGenerateRoute: (settings) {
-        if(settings.name == "add-journal") {
-          Map<String, dynamic> map = settings.arguments as Map<String, dynamic>;
-          final Journal journal = map["journal"] as Journal;
-          final bool isEditing = map["is_editing"];
-
-          return MaterialPageRoute(builder: (context){
-            return AddJournalScreen(journal: journal, isEditing: isEditing,);
-          });
-        }
-        return null;
       },
     );
   }
