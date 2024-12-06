@@ -1,6 +1,5 @@
+import 'package:entregar/components/vestibular.dart';
 import 'package:flutter/material.dart';
-
-import '../components/vestibular.dart';
 
 class VestibularProvider extends InheritedWidget {
   VestibularProvider({
@@ -8,30 +7,21 @@ class VestibularProvider extends InheritedWidget {
     required super.child,
   });
 
-  final List<Vestibular> vestibularList = [
-    Vestibular(
-      tituloCurto: 'ENEM',
-      tituloLongo: 'Exame Nacional do Ensino Médio',
-      pergunta: 'O que é o ENEM?',
-      resposta: 'O ENEM é...',
-    ),
-    Vestibular(
-      tituloCurto: 'SISU',
-      tituloLongo: 'Sistema de Seleção Unificado',
-      pergunta: 'Como funciona o SISU?',
-      resposta: 'O SISU é...',
-    ),
-
+  final List<VestibularCard> vestibularList = [
+    VestibularCard('ENEM', 'Exame Nacional do Ensino Médio'),
+    VestibularCard('SISU', 'Sistema de Seleção Unificada'),
+    VestibularCard('PSIU', 'Processo Seletivo Unificado'),
+    VestibularCard('PSS', 'Processo Seletivo Seriado'),
   ];
 
-  newVestibular(String tituloCurto, String tituloLongo, String pergunta, String resposta) {
-    vestibularList.add(Vestibular(tituloCurto: tituloCurto, tituloLongo: tituloLongo, pergunta: pergunta, resposta: resposta));
+  void newPersonagem(String tituloCurto, String tituloLongo) {
+    vestibularList.add(VestibularCard(tituloCurto, tituloLongo));
   }
 
   static VestibularProvider of(BuildContext context) {
     final VestibularProvider? result =
-    context.dependOnInheritedWidgetOfExactType<VestibularProvider>();
-    assert(result != null, 'No VestibularProvider found in context');
+        context.dependOnInheritedWidgetOfExactType<VestibularProvider>();
+    assert(result != null, 'No PersonagemProvider found in context');
     return result!;
   }
 
